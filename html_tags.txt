@@ -1,0 +1,20 @@
+html 
+
+<area shape="rect" coords="Topleft1, Topleft2, Bottomright1, Bottomright2" href="">
+
+css
+
+float : An image can be fixed in the position. 
+
+style="float:right/left"
+
+font-family":
+
+Background image : https://www.w3schools.com/html/html_images_background.asp
+
+
+
+Javascript
+
+alert function
+

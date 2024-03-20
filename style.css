@@ -1,0 +1,240 @@
+* {
+    font-family: 'Alegreya Sans', sans-serif;
+    /*color:rgba(0, 0, 0, 0.58);*/
+    color: #2F2F2F;
+    word-wrap: break-word;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden; 
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set full width */
+    background-color: #2F2F2F;
+    color: white;
+    padding: 3px;
+    text-align: right;
+    z-index: 1000;
+}
+
+.text-overlay .line {
+    width: 150%; height: 0.5rem; top: 70%; color: #2f2f2f;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;  
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(247, 223, 86);
+}
+
+.bgimage, .text-overlay {
+    position: relative;
+}
+
+.bgimage img {
+    width: 101%; 
+    height: auto;
+    display: block;
+    filter: blur(1px);
+    -webkit-filter: blur(0px);
+    overflow: hidden;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 1%; 
+    left: 5%;
+}
+
+.bgimage .line {
+    position: absolute; 
+}
+
+.bgimage h1 {
+    font-size: 500%;
+}
+
+.text-overlay p {
+    font-size: 200%;
+    text-indent: 10%;
+}
+
+.line {
+    left: 0;
+    top: 50%;  
+    bottom: -5px;
+    width: 300px; 
+    height: 2px; 
+    background-color: rgba(0, 0, 0, 0.58);
+}
+
+.education_img
+{
+    width: auto;
+    height: auto;
+    float: right;   
+}
+
+.box-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box-container dt{
+    font-weight: bold;
+}
+
+.box-container dt, .box-container dd {
+    color: black;
+}
+
+.box {
+    word-wrap: break-word;
+    max-width: 100%;
+    flex: 0 0 45%;
+    background-color: lightblue;
+    padding: 1rem;
+    margin: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 5rem;
+}
+
+.whitecolor dt, .whitecolor dd {
+    color: white;
+}
+
+.box dd {
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.square {
+    width: calc(50% - 10px);
+    background-color: #2F2F2F;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 1rem;
+}
+
+.container h2, .container p {
+    color: white;
+    text-align: justify;
+}
+
+.container p {
+    text-indent: 2rem;
+}
+
+#about, #education, #hobbies, #experience {
+    text-align: center;
+}
+
+.line {
+    margin: 0 auto;
+}
+
+.box {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#contact img:hover, .box:hover {
+    transform: scale(0.9);
+}
+
+.square:hover {
+    box-shadow: 0 0 10px 3px rgb(234, 218, 126);
+}
+
+.inside {
+    margin: 0 20px;
+    text-decoration: none;
+    position: relative; 
+}
+
+.inside::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(234, 218, 126); 
+    bottom: -5px; 
+    left: 50%; 
+    transform: translate(-50%, 0); 
+    transition: width 0.3s ease; 
+}
+
+.inside:hover::after {
+    width: 100%; 
+}
+
+#about h2, #experience h2 {
+    text-align: justify; 
+    text-indent: 2rem; 
+    padding: 2rem; 
+    line-height: 3rem;
+}
+
+.contactcont {
+    display: flex;
+}
+
+.conclass, .phone, .logo {
+    flex: 1;
+}
+
+.phone p, .phone a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    margin: 0.5rem;
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#contact, #contact h1, #contact h3,#contact address, footer {
+    background-color: #2F2F2F;
+    color: white;
+}
+
+#contact {
+    padding : 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
